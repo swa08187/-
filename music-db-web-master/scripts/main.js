@@ -17,7 +17,7 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function() {
     let mySrc = myImage.getAttribute('src');
-    if(mySrc === 'https://panels.twitch.tv/panel-666973030-image-1c9e4a69-a54a-4a95-a07d-1a113ec0a0d1') {
+    if(mySrc === 'https://i.ibb.co/F49FpKdx/Untitled-drawing-1.png') {
     myImage.setAttribute ('src','https://static-cdn.jtvnw.net/jtv_user_pictures/b3125729-52b2-4b7a-9774-bdfa54ccd493-profile_image-70x70.png');
     } else {
     myImage.setAttribute ('src','https://panels.twitch.tv/panel-666973030-image-1c9e4a69-a54a-4a95-a07d-1a113ec0a0d1');
@@ -34,7 +34,7 @@ function setUserName() {
     } 
     else {
         localStorage.setItem('name', myName);
-        myHeading.innerHTML = 'Mozilla is cool, ' + myName;
+        myHeading.innerHTML = 'Mozilla is good, ' + myName;
     }
 }
 
@@ -43,7 +43,7 @@ if(!localStorage.getItem('name')) {
 } 
 else {
     let storedName = localStorage.getItem('name');
-    myHeading.textContent = 'Mozilla is cool, ' + storedName;
+    myHeading.textContent = 'Mozilla is good, ' + storedName;
 }
 
 
